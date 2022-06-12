@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+    <title>gabdyq's hw0609jQuery/Bootstrap</title>
+  </head>
+  <body id = "gback" onload="setTheme()">
+    <nav class="navbar navbar-expand-lg bg-light" id = "barcol">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">gabdyq's hw0609jQuery/Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" id = "mlibs">
+              <a class="nav-link active" aria-current="page" href="#">MadLibs</a>
+            </li>
+            <li class="nav-item" id = "calc">
+              <a class="nav-link active" aria-current="page" href="#">Tom Thumb</a>
+            </li>
+            <li class="nav-item" id = "cook">
+              <a class="nav-link active" aria-current="page" href="#">Save Cookies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://github.com/gabdylgaziz" blank = "_target">github</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" id = "ltheme">
+                <a class="nav-link active" aria-current="page" href="#">Light Theme</a>
+              </li>
+              <li class="nav-item" id = "ntheme">
+                <a class="nav-link active" aria-current="page" href="#">Dark Theme</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="questions">
+        <h1>Mad Libs</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group mb-3">
+            <label for="person">Person Name</label>
+            <input for="person" class="form-control person" type="text" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="character">Character</label>
+            <input id="character" class="form-control character" type="text" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="adverb">Adverb</label>
+            <input id="adverb" class="form-control adverb" type="text" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="adjective">Adjective</label>
+            <input for="adjective" class="form-control adjective" type="text" required>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-light" id = "bbutton">Tell Story!</button>
+          </div>
+        </form>
+        <hr>
+      </div>
+
+      <div id="story">
+        <h1>Wendy's Crazy MadLibs Story</h1>
+        <hr>
+        <h3>One day, my friend <span class="person"></span> was visiting New York and ran into <span class="character"></span>. <span class="person"></span> ran <span class="adverb"></span> to meet <span class="character"></span>. But <span class="character"></span> turned out to be very <span class="adjective"></span> and <span class="person"></span> did not enjoy the meeting.</h3>
+      </div>
+
+      <div id="calculator">
+        <h1>Tom Thumb</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group mb-3">
+            <label for="w">Image width (px)</label>
+            <input for="w" class="form-control w" type="text" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="h">Image height (px)</label>
+            <input id="h" class="form-control h" type="text" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="num">Number of Colors</label>
+            <input id="num" class="form-control num" type="text" required>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-light" id = "calcbutton">Calculate File Size</button>
+          </div>
+        </form>
+        <hr>
+      </div>
+
+      <div id="result">
+        <h3>File is <span class="num"></span>KB which is OK!.</h3>
+      </div>
+
+      <div id="notresult">
+        <h3>File is <span class="num"></span>KB which is bad(( Please use a different icon.</h3>
+      </div>
+
+    </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
+

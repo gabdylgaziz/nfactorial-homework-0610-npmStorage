@@ -1,0 +1,42 @@
+body{
+  background-color: rgb(230, 245, 240);
+  
+}
+
+.light{
+  background-color: rgb(230, 245, 240);
+  color: black;
+}
+
+.dark{
+  background-color: rgb(47, 51, 50);
+  color: white;
+}
+
+.container {
+  padding-top: 50px;
+  max-width: 500px;
+}
+
+#story {
+  display: none;
+}
+
+
+#calculator{
+  display: none;
+}
+
+#result{
+  display: none;
+}
+
+#notresult{
+  display: none;
+}
+
+#yesorno{
+  display: unset;
+}
+
+
