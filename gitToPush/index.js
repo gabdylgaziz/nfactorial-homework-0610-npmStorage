@@ -8,10 +8,10 @@ const welcome = () => {
     console.log("nFactorial Incubator 22' author Gabdylgaziz Zhagypar")
 }
 
-const gitPush = (name, username) => {
+const gitPush = (name) => {
     exec('git add .');
     exec(`git commit -m "${name}"`);
-    exec(`git push --${username}`)
+    exec(`git push`)
 }
 
 program
@@ -23,7 +23,6 @@ program
     .command('gitToPush')
     .description('push to github')
     .argument("string", "pls put commit name")
-    .argument("string", "your username")
     .action(gitPush)
 
 
