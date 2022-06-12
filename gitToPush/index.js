@@ -11,7 +11,7 @@ const welcome = () => {
 const gitPush = (name, username) => {
     exec('git add .');
     exec(`git commit -m "${name}"`);
-    exec(`git push -${username}`)
+    exec(`git push --${username}`)
 }
 
 program
